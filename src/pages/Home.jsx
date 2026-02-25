@@ -18,7 +18,7 @@ export default function TerminalHero() {
   );
 
   const age = (() => {
-    const dob = new Date(2005, 5, 24); // 24 June 2005 (month is 0-indexed)
+    const dob = new Date(2004, 4, 7); // 24 June 2005 (month is 0-indexed)
     const now = new Date();
     let a = now.getFullYear() - dob.getFullYear();
     const beforeBirthday =
@@ -199,17 +199,17 @@ export default function TerminalHero() {
             {/* ── BODY ────────────────────────────────────────────── */}
             <div className="px-6 py-8 font-mono text-sm md:text-base space-y-4">
 
-              <div className="boot-line text-indigo-400">jay@system:~$ boot</div>
+              <div className="boot-line text-indigo-400">Tezor@system:~$ boot</div>
 
               <div className="text-white/60 text-xs space-y-1">
                 <p className="system-log hover:text-white/90 hover:translate-x-1 transition-all duration-300">[ OK ] core modules loaded</p>
-                <p className="system-log hover:text-white/90 hover:translate-x-1 transition-all duration-300">[ OK ] animation engine ready</p>
-                <p className="system-log hover:text-white/90 hover:translate-x-1 transition-all duration-300">[ OK ] interface initialized</p>
+                <p className="system-log hover:text-white/90 hover:translate-x-1 transition-all duration-300">[ OK ] actuator system initiated</p>
+                <p className="system-log hover:text-white/90 hover:translate-x-1 transition-all duration-300">[ OK ] system up and running</p>
               </div>
 
               <div className="command-line pt-4">
-                <span className="text-indigo-400">jay@system:~$</span>{" "}
-                <span className="text-white">Yes, this is a portfolio. No, it's not finished</span>
+                <span className="text-indigo-400">Tezor@system:~$</span>{" "}
+                <span className="text-white">A portfolio for all my accomplishments. Under Development ...</span>
                 <span className="cursor text-indigo-400">▋</span>
               </div>
 
@@ -217,20 +217,20 @@ export default function TerminalHero() {
                 className="hero-title text-3xl md:text-5xl font-black tracking-tight uppercase pt-6"
                 style={{ fontFamily: "'Orbitron', sans-serif" }}
               >
-                <span className="hero-word inline-block hover:text-indigo-400 hover:scale-105 transition-all duration-300 cursor-default">Engineering</span>{" "}
-                <span className="hero-word inline-block text-indigo-400 hover:text-indigo-300 hover:scale-105 transition-all duration-300 cursor-default">Solutions</span>
+                <span className="hero-word inline-block hover:text-indigo-400 hover:scale-105 transition-all duration-300 cursor-default">Domain:</span>{" "}
+                <span className="hero-word inline-block text-indigo-400 hover:text-indigo-300 hover:scale-105 transition-all duration-300 cursor-default">AI and ROBOTICS</span>
                 <br />
+                <span className="hero-word inline-block hover:text-indigo-400 hover:scale-105 transition-all duration-300 cursor-default">Dreams</span>{" "}
                 <span className="hero-word inline-block hover:text-indigo-400 hover:scale-105 transition-all duration-300 cursor-default">That</span>{" "}
-                <span className="hero-word inline-block hover:text-indigo-400 hover:scale-105 transition-all duration-300 cursor-default">Actually</span>{" "}
-                <span className="hero-word inline-block text-indigo-400 hover:text-indigo-300 hover:scale-105 transition-all duration-300 cursor-default">Work</span>
+                <span className="hero-word inline-block text-indigo-400 hover:text-indigo-300 hover:scale-105 transition-all duration-300 cursor-default">build</span>
               </h1>
 
               {/* ── ABOUT COMMAND OUTPUT ─────────────────────────── */}
               <div ref={aboutOutputRef} className="pt-6 space-y-4">
 
                 <div className="about-command">
-                  <span className="text-indigo-400">jay@system:~$</span>{" "}
-                  <span className="text-white">about --me</span>
+                  <span className="text-indigo-400">Tezor@system:~$</span>{" "}
+                  <span className="text-white">about --Faizan</span>
                 </div>
 
                 <div className="about-divider h-px w-full bg-white/10" />
@@ -240,10 +240,10 @@ export default function TerminalHero() {
                   {/* stdout lines */}
                   <div className="flex-1 space-y-3 text-s leading-relaxed">
                     {[
-                      <span>I'm a {hi(`${age} year old`)} computer science student in {hi("Noida")}, interested in {hi("intelligent systems")} and practical problem solving.</span>,
+                      <span>I'm a {hi(`${age} year old`)} computer science student in {hi("Noida")}, interested in {hi("AI and Robotics")} and practical solutions.</span>,
                       <span>{hi("Theory. Structure. Execution.")} Turning ideas into working systems.</span>,
-                      <span>I prefer {hi("simplicity")} over cleverness, {hi("principles")} over shortcuts.</span>,
-                      <span>Moving {hi("beyond academic projects")} into production ready systems.</span>,
+                      <span>I prefer {hi("comprehensive systems")} with in-depth research, {hi("principles")} and evolving technologies.</span>,
+                      <span>Transitioning {hi("beyond code scripts")} towards real-world implementation systems.</span>,
                     ].map((line, i) => (
                       <p key={i} className="about-line">
                         <span className="text-indigo-400/70 mr-2 select-none">›</span>
@@ -258,12 +258,12 @@ export default function TerminalHero() {
                     style={{ transformStyle: "preserve-3d" }}
                   >
                     <ProfileCard
-                      name="Jay Joshi"
+                      name="Faizan Ahmed Syed"
                       title="B.Tech CSE Student"
-                      handle="gaminbhoot"
+                      handle="Tezor"
                       status="Online"
                       contactText="Contact Me"
-                      avatarUrl="/jay1.webp"
+                      avatarUrl="/faizan.png"
                       grainUrl="/grain.webp"
                       iconUrl="/iconpattern.png"
                       showUserInfo={true}
@@ -276,7 +276,7 @@ export default function TerminalHero() {
                 </div>
 
                 <div className="after-prompt pt-1">
-                  <span className="text-indigo-400">jay@system:~$</span>{" "}
+                  <span className="text-indigo-400">Tezor@system:~$</span>{" "}
                   <span className="cursor-2 text-indigo-400">▋</span>
                 </div>
 
@@ -284,8 +284,8 @@ export default function TerminalHero() {
                   {[
                     { label: "LOCAL TIME", value: time, color: "text-indigo-300" },
                     { label: "STATUS", value: "AVAILABLE", color: "text-green-400", dot: true },
-                    { label: "FOCUS", value: "Web · Data Science · AI", color: "text-white/70" },
-                    { label: "MODE", value: "BUILD", color: "text-white/70" },
+                    { label: "FOCUS", value: "AIML · Robotics · Research", color: "text-white/70" },
+                    { label: "MODE", value: "Design and Implement", color: "text-white/70" },
                   ].map(({ label, value, color, dot }) => (
                     <div key={label} className="status-card group hover:bg-white/5 p-3 rounded-lg transition-all duration-300 hover:scale-105 hover:border hover:border-white/20">
                       <p className="text-white/40 group-hover:text-white/60 transition-colors duration-300">{label}</p>

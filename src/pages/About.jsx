@@ -511,9 +511,9 @@ const About = () => {
             style={{ transformStyle: "preserve-3d" }}
           >
             <ProfileCard
-              name="Jay Joshi"
+              name="Faizan Ahmed Syed"
               title="B.Tech CSE Student"
-              handle="gaminbhoot"
+              handle="Tezor"
               status="Online"
               contactText="Contact Me"
               avatarUrl="/jay1.png"
