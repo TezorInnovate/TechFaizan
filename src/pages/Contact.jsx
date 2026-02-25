@@ -183,9 +183,9 @@ export default function Contact() {
           {/* Contact entries as stdout */}
           <div className="space-y-1 mt-auto">
             {[
-              { href: "https://mail.google.com/mail/?view=cm&fs=1&to=jay05.joshi@gmail.com", icon: <Mail size={16} />, key: "EMAIL", value: "jay05.joshi@gmail.com", flag: "--primary" },
-              { href: "https://github.com/gaminbhoot",      icon: <Github size={16} />,   key: "GITHUB",   value: "@gaminbhoot", flag: "--open"    },
-              { href: "https://linkedin.com/in/gaminbhoot", icon: <Linkedin size={16} />, key: "LINKEDIN", value: "Jay Joshi",   flag: "--connect" },
+              { href: "https://mail.google.com/mail/?view=cm&fs=1&to=faizanahmedsyed1@gmail.com", icon: <Mail size={16} />, key: "EMAIL", value: "faizanahmedsyed1@gmail.com", flag: "--primary" },
+              { href: "https://github.com/TezorInnovate",      icon: <Github size={16} />,   key: "GITHUB",   value: "@TezorInnovate", flag: "--open"    },
+              { href: "https://linkedin.com/in/faizanahmed754", icon: <Linkedin size={16} />, key: "LINKEDIN", value: "Faizan Ahmed Syed",   flag: "--connect" },
             ].map(({ href, icon, key, value, flag }, i) => (
               <a
                 key={i}
@@ -236,7 +236,7 @@ export default function Contact() {
 
           {/* Prompt line */}
           <div className="font-mono text-xs mb-4 contact-link">
-            <span className="text-indigo-400 font-bold">jay@portfolio:~$</span>
+            <span className="text-indigo-400 font-bold">Tezor@portfolio:~$</span>
             <span className="text-white"> send --interactive</span>
           </div>
 
@@ -282,7 +282,7 @@ export default function Contact() {
             <div className="-mx-5 md:-mx-6 px-5 md:px-6 py-3 -mb-5 md:-mb-6 border-t border-white/[0.06] mt-4">
               {/* Command preview */}
               <p className="font-mono text-[9px] text-white/20 mb-3 tracking-widest">
-                <span className="text-indigo-300/90">jay@portfolio:~$</span><span className="text-white/60"> transmit --encrypt --sign</span>
+                <span className="text-indigo-300/90">Tezor@portfolio:~$</span><span className="text-white/60"> transmit --encrypt --sign</span>
               </p>
               <button
                 type="submit"

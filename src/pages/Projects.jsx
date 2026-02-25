@@ -98,7 +98,7 @@ export default function Projects() {
               backgroundClip: 'text',
             }}
           >
-            Selected <span style={{ WebkitTextFillColor: '#818cf8' }}>Works</span>
+            Implemented <span style={{ WebkitTextFillColor: '#818cf8' }}>Projecs</span>
           </h1>
         </div>
         
@@ -119,14 +119,14 @@ export default function Projects() {
           className="mt-6 text-gray-200 font-mono text-sm tracking-wider flex items-center gap-2"
         >
           <Folder size={16} className="text-indigo-400" />
-          Explore my carefully crafted projects
+          Below is the documentation for all my projects:
         </motion.p>
       </motion.div>
 
       {/* Grid */}
       <div 
         ref={gridRef}
-        className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-20 relative"
+        className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-20 relative"
       >
         {projectsData.map((project, index) => (
           <motion.div

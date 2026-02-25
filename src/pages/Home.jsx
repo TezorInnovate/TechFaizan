@@ -54,7 +54,7 @@ export default function TerminalHero() {
         { scale: 1, opacity: 1, duration: 0.4, stagger: 0.08, ease: "back.out(2)" },
         "-=0.8"
       );
-      tl.fromTo(
+      /*tl.fromTo(
         ".boot-line",
         { opacity: 0, x: -30 },
         { opacity: 1, x: 0, duration: 0.6 },
@@ -67,19 +67,19 @@ export default function TerminalHero() {
         "-=0.3"
       );
       tl.fromTo(".command-line", { opacity: 0 }, { opacity: 1, duration: 0.4 })
-        .to(".command-line", { x: "+=2", duration: 0.05, repeat: 2, yoyo: true, ease: "none" });
+        .to(".command-line", { x: "+=2", duration: 0.05, repeat: 2, yoyo: true, ease: "none" });*/
       tl.fromTo(
         ".hero-word",
         { opacity: 0, y: 30, rotateX: -20 },
         { opacity: 1, y: 0, rotateX: 0, duration: 0.8, stagger: 0.08, ease: "back.out(1.2)" },
         "-=0.3"
       );
-      tl.fromTo(
+      /*tl.fromTo(
         ".status-card",
         { opacity: 0, y: 20, scale: 0.95 },
         { opacity: 1, y: 0, scale: 1, duration: 0.6, stagger: 0.08, ease: "power2.out" },
         "-=0.5"
-      );
+      );*/
 
       // ── ABOUT OUTPUT – SCROLL TRIGGERED ──────────────────────────
       gsap.fromTo(".about-command",
@@ -127,10 +127,10 @@ export default function TerminalHero() {
       });
       gsap.to(".boot-line",    { opacity: 0.6, repeat: -1, yoyo: true, duration: 4,   ease: "sine.inOut" });
       gsap.to(".command-line", { opacity: 0.7, repeat: -1, yoyo: true, duration: 3.5, ease: "sine.inOut" });
-      gsap.to(".status-card",  {
+      /*gsap.to(".status-card",  {
         opacity: 0.85, repeat: -1, yoyo: true, duration: 4.5,
         stagger: { each: 0.6, repeat: -1 }, ease: "sine.inOut",
-      });
+      });*/
       gsap.to(".hero-title", { opacity: 0.92, repeat: -1, yoyo: true, duration: 5, ease: "sine.inOut" });
 
       // ── SCROLL FX ─────────────────────────────────────────────────
@@ -143,7 +143,7 @@ export default function TerminalHero() {
         onEnterBack:  () => gsap.to(terminalRef.current, { boxShadow: "0 0 80px rgba(99,102,241,0.6), 0 0 40px rgba(168,85,247,0.4)", duration: 0.5 }),
         onLeaveBack:  () => gsap.to(terminalRef.current, { boxShadow: "0 20px 25px -5px rgba(0,0,0,0.1)", duration: 0.5 }),
       });
-      gsap.to(".system-log", {
+      /*gsap.to(".system-log", {
         scrollTrigger: { trigger: ".system-log", start: "top 30%", end: "bottom top", scrub: 0.5 },
         opacity: 0.9, x: -8, ease: "none",
       });
@@ -154,7 +154,7 @@ export default function TerminalHero() {
       gsap.to(".command-line", {
         scrollTrigger: { trigger: ".command-line", start: "top 50%", end: "bottom top", scrub: 1 },
         x: 8, opacity: 0.85, ease: "none",
-      });
+      });*/
 
     }, containerRef);
 
@@ -222,7 +222,7 @@ export default function TerminalHero() {
                 <br />
                 <span className="hero-word inline-block hover:text-indigo-400 hover:scale-105 transition-all duration-300 cursor-default">Dreams</span>{" "}
                 <span className="hero-word inline-block hover:text-indigo-400 hover:scale-105 transition-all duration-300 cursor-default">That</span>{" "}
-                <span className="hero-word inline-block text-indigo-400 hover:text-indigo-300 hover:scale-105 transition-all duration-300 cursor-default">build</span>
+                <span className="hero-word inline-block text-indigo-400 hover:text-indigo-300 hover:scale-105 transition-all duration-300 cursor-default">build Worlds</span>
               </h1>
 
               {/* ── ABOUT COMMAND OUTPUT ─────────────────────────── */}

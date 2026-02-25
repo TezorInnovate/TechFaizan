@@ -134,7 +134,7 @@ export default function Skills() {
             scrollTrigger: {
               trigger: card,
               start: "top 80%",
-              toggleActions: "play none none reverse",
+              toggleActions: "play none none none",
             },
           }
         );
@@ -156,7 +156,7 @@ export default function Skills() {
             scrollTrigger: {
               trigger: certificationsRef.current,
               start: "top 80%",
-              toggleActions: "play none none reverse",
+              toggleActions: "play none none none",
             },
           }
         );
@@ -181,7 +181,7 @@ export default function Skills() {
             scrollTrigger: {
               trigger: card,
               start: "top 85%",
-              toggleActions: "play none none reverse",
+              toggleActions: "play none none none",
             },
           }
         );
@@ -205,7 +205,7 @@ export default function Skills() {
             scrollTrigger: {
               trigger: resumeButtonRef.current,
               start: "top 90%",
-              toggleActions: "play none none reverse",
+              toggleActions: "play none none none",
             },
           }
         );
@@ -279,29 +279,36 @@ export default function Skills() {
   }, []);
 
   const skills = [
-    "Artificial Intelligence",
-    "Python",
-    "Data Science",
+    "AI & ML",
+    "Python - NLP, Computer Vision, etc",
+    "Robotics",
+    "Autonomous & Embedded Systems",
+    "CAD Designing & Technical Drawing",
+    "Hardware Design",
+    "Git & GitHub",
     "Deep Learning Frameworks",
     "Data Visualization",
-    "Motion Tracking",
-    "Computer Vision",
-    "Neural Networks",
-    "Machine Learning",
     "Cisco Networking",
-    "Git & GitHub",
     "Project Development",
-    "Project Management",
-    "Design Lead",
-    "Analytical Thinking",
-    "Adaptability",
   ];
 
   const certifications = [
     {
+      title: " Software Testing",
+      issuer: "NPTEL SWAYAM",
+      date: "Jan-Feb 2024",
+      color: "indigo"
+    },
+    {
       title: " Python for Data Science",
-      issuer: "NPTEL",
-      date: "2024",
+      issuer: "NPTEL SWAYAM",
+      date: "Jul-Aug 2024",
+      color: "purple"
+    },
+    {
+      title: "AutoCAD 2D, 3D",
+      issuer: "Design Master",
+      date: "June-Aug 2025",
       color: "indigo"
     },
     {
@@ -311,17 +318,23 @@ export default function Skills() {
       color: "purple"
     },
     {
-      title: "Data Science and Machine Learning",
-      issuer: "Masai X IIT Guwahati",
-      date: "2025",
-      color: "cyan"
+      title: "Advanced Robotics Applications",
+      issuer: "NPTEL SWAYAM",
+      date: "Jan-Mar 2026 (on-going)",
+      color: "indigo"
+    },
+    {
+      title: "Neural Networks for Computer Vision and NLP",
+      issuer: "NPTEL SWAYAM",
+      date: "Jan-Mar 2026 (on-going)",
+      color: "purple"
     },
   ];
 
   const handleResumeDownload = () => {
     const link = document.createElement('a');
-    link.href = '/JAY JOSHI RESUME.pdf';
-    link.download = 'JAY_JOSHI_RESUME.pdf';
+    link.href = '/FAIZAN AHMED SYED RESUME.pdf';
+    link.download = 'FAIZAN_AHMED_SYED_RESUME.pdf';
     link.click();
   };
 
@@ -411,11 +424,11 @@ export default function Skills() {
             style={{ transformStyle: "preserve-3d", willChange: "transform" }}
           >
             <h3 className="text-sm font-mono uppercase tracking-widest text-indigo-400 mb-3 group-hover:text-indigo-300 transition-colors duration-300">
-              Frontend Engineering
+              Artificial Intelliigence and Machine Learning
             </h3>
             <p className="text-gray-200 leading-relaxed group-hover:text-white transition-colors duration-300">
-             My focus is on designing interfaces that have a sense of intentionality, not just in their looks, but also in their structure. I try to ensure that components have clear boundaries, the state changes in a logical fashion, and the motion helps to clarify the experience rather than confusing it.
-            </p>
+             My work in AI and machine learning focuses on building practical, deployable systems rather than purely theoretical models. I develop supervised and unsupervised models for anomaly detection, cybersecurity, computer vision, and emotion recognition, working with structured data, time-series signals (EEG), and image inputs using CNN and hybrid architectures, while emphasising feature engineering, model optimisation, performance evaluation (accuracy, F1-score, confusion matrix), and efficient deployment. I also explore hybrid deep learning and neuro-symbolic approaches to create interpretable, adaptive models suited for real-world use.
+             </p>
             <div className="mt-4 h-1 w-0 group-hover:w-full bg-gradient-to-r from-indigo-400 to-purple-400 transition-all duration-700" />
           </div>
 
@@ -425,11 +438,11 @@ export default function Skills() {
             style={{ transformStyle: "preserve-3d", willChange: "transform" }}
           >
             <h3 className="text-sm font-mono uppercase tracking-widest text-indigo-400 mb-3 group-hover:text-purple-300 transition-colors duration-300">
-              Motion & Interaction
+              Robotics Software and Hardware Design
             </h3>
             <p className="text-gray-200 leading-relaxed group-hover:text-white transition-colors duration-300">
-              To me, animation is a communication tool. Transitions, the use of scroll, and timing are useful in guiding the user and making the interface feel more natural and responsive.
-            </p>
+              My approach to robotics integrates embedded hardware systems with intelligent control software. I design systems using microcontrollers and single-board computers such as the Raspberry Pi, integrating sensors, actuators, cameras, and communication modules, while developing control logic, perception modules, and AI-driven decision layers for autonomous drones, surveillance platforms, and robotic systems. I emphasise sensor fusion, real-time data processing, hardware–software interfacing, and robust system architecture to ensure stable, fault-tolerant performance in dynamic environments.
+              </p>
             <div className="mt-4 h-1 w-0 group-hover:w-full bg-gradient-to-r from-purple-400 to-pink-400 transition-all duration-700" />
           </div>
 
@@ -439,11 +452,11 @@ export default function Skills() {
             style={{ transformStyle: "preserve-3d", willChange: "transform" }}
           >
             <h3 className="text-sm font-mono uppercase tracking-widest text-indigo-400 mb-3 group-hover:text-cyan-300 transition-colors duration-300">
-              Applied AI & Logic
+              Research and Innovation
             </h3>
             <p className="text-gray-200 leading-relaxed group-hover:text-white transition-colors duration-300">
-              My research in the area of artificial intelligence focuses on application, ie. trying to gain an understanding of the model, its failures, and its application to solve problems rather than just its potential.
-            </p>
+              Research focuses on building novel, application-driven systems that address real-world challenges in cybersecurity, autonomous systems, and intelligent perception, supported by structured experimentation, comparative model analysis, and system-level validation aligned with academic standards. Work includes interdisciplinary integration—such as combining GANs with ANFIS models, hybrid CNN–ViT architectures, and AI-based self-healing cybersecurity frameworks—while emphasising innovation through identifying limitations in existing systems, proposing hybrid or efficiency-oriented alternatives, and validating them through implementation and measurable performance improvements.
+              </p>
             <div className="mt-4 h-1 w-0 group-hover:w-full bg-gradient-to-r from-cyan-400 to-blue-400 transition-all duration-700" />
           </div>
 
@@ -453,11 +466,11 @@ export default function Skills() {
             style={{ transformStyle: "preserve-3d", willChange: "transform" }}
           >
             <h3 className="text-sm font-mono uppercase tracking-widest text-indigo-400 mb-3 group-hover:text-green-300 transition-colors duration-300">
-              Engineering Mindset
+              Autonomy and Integrated Systems
             </h3>
             <p className="text-gray-200 leading-relaxed group-hover:text-white transition-colors duration-300">
-             I value clarity over cleverness. In working with frontend code or model logic, I aim to build systems that are clear, easy to maintain, and flexible in the face of change.
-            </p>
+             Autonomous systems are designed to integrate perception, reasoning, and action within a unified architecture, including multi-module pipelines where detection, decision-making, and response mechanisms operate cohesively. This work spans behaviour-based anomaly detection systems, autonomous cybersecurity defence frameworks, intelligent drones, and AI-assisted robotic platforms, with emphasis on modular design, agent-based architectures, real-time decision pipelines, and integrated feedback mechanisms to ensure adaptability, resilience, and operational independence.
+             </p>
             <div className="mt-4 h-1 w-0 group-hover:w-full bg-gradient-to-r from-green-400 to-emerald-400 transition-all duration-700" />
           </div>
 
