@@ -6,8 +6,8 @@ export const projectsData = [
     title: "AI-based Autonomous Firefighting Rover",
     category: "Computer Vision / Hardware Design",
     year: "2026",
-    thumbnail: "/images/ai-rover/thumb.webp",
-    heroImage: "/images/ai-rover/hero.webp",
+    thumbnail: "/images/ai-rover/rover.jpeg",
+    heroImage: "/images/ai-rover/rover.jpeg",
     githubLink: "https://github.com/TezorInnovate/Autonomous-Firefighting-Rover",
     prototypeLink: "",
     
@@ -58,11 +58,11 @@ export const projectsData = [
       // Select which images to showcase (image path + title)
       showcaseImages: [
         {
-          image: "/images/ai-rover/architecture.webp",
+          image: "/images/ai-rover/rover.jpeg",
           title: "Hardware Prototype"
         },
         {
-          image: "/images/ai-rover/detection.webp",
+          image: "/images/ai-rover/software.jpeg",
           title: "Software Layout"
         }
       ]
@@ -167,8 +167,8 @@ export const projectsData = [
     title: "AEGIS-X: Adaptive Explainable Ground-Integrated Surveillance UAV",
     category: "System Security / Data Sanitization",
     year: "2025-26",
-    thumbnail: "/images/aegisx/thumb.webp",
-    heroImage: "/images/aegisx/hero.webp",
+    thumbnail: "/images/aegisx/logo2.jpg",
+    heroImage: "/images/aegisx/drone.jpeg",
     githubLink: "",
     prototypeLink: "",
     
@@ -221,16 +221,16 @@ export const projectsData = [
       // Select which images to showcase (image path + title)
       showcaseImages: [
         {
-          image: "/images/aigesx/goals.webp",
+          image: "/images/aegisx/drone.jpeg",
           title: "Hardware Drone Design"
         },
         {
-          image: "/images/aigesx/architecture.webp",
+          image: "/images/aegisx/architecture.webp",
           title: "System Software Layout"
         },
         
         {
-          image: "/images/aegisx/sanitization.webp",
+          image: "/images/aegisx/poster.jpeg",
           title: "Project Plan Poster"
         },
         {
@@ -393,16 +393,16 @@ export const projectsData = [
       // Select which images to showcase (image path + title)
       showcaseImages: [
         {
-          image: "/images/octawipe/goals.webp",
+          image: "/images/neuroshield/goals.webp",
           title: "Model Matrix"
         },
         {
-          image: "/images/octawipe/architecture.webp",
+          image: "/images/neuroshield/architecture.webp",
           title: "System Architecture"
         },
         
         {
-          image: "/images/octawipe/sanitization.webp",
+          image: "/images/neuroshield/sanitization.webp",
           title: "Telegram Bot"
         }
       ]
