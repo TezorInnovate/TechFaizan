@@ -168,7 +168,7 @@ export const projectsData = [
     category: "System Security / Data Sanitization",
     year: "2025-26",
     thumbnail: "/images/aegisx/logo2.jpg",
-    heroImage: "/images/aegisx/drone.jpeg",
+    heroImage: "/images/aegisx/logo2.jpg",
     githubLink: "",
     prototypeLink: "",
     
@@ -333,8 +333,8 @@ export const projectsData = [
     title: "Neuro-Shield: Self Healing Cybersecurity Framework",
     category: "Cybersecurity / Linux OS / Random Forest",
     year: "May-June 2025",
-    thumbnail: "/images/neuroshield/thumb.webp",
-    heroImage: "/images/neuroshield/hero.webp",
+    thumbnail: "/images/neuroshield/logo.jpg",
+    heroImage: "/images/neuroshield/logo.jpg",
     githubLink: "https://github.com/TezorInnovate/NeuroShield",
     prototypeLink: "",
     
@@ -393,17 +393,20 @@ export const projectsData = [
       // Select which images to showcase (image path + title)
       showcaseImages: [
         {
-          image: "/images/neuroshield/goals.webp",
-          title: "Model Matrix"
-        },
-        {
-          image: "/images/neuroshield/architecture.webp",
+          image: "/images/neuroshield/architecture.png",
           title: "System Architecture"
         },
-        
         {
-          image: "/images/neuroshield/sanitization.webp",
+          image: "/images/neuroshield/bot.jpeg",
           title: "Telegram Bot"
+        },
+        {
+          image: "/images/neuroshield/terminal.jpg",
+          title: "Terminal Output Window"
+        },
+        {
+          image: "/images/neuroshield/matrix.jpeg",
+          title: "Model Confusion Matrix"
         }
       ]
     },
@@ -497,32 +500,29 @@ export const projectsData = [
   },
 
   {
-    id: "octawipe",
-    title: "OctaWipe — Secure Data Sanitization",
-    category: "System Security / Data Sanitization",
-    year: "2025",
-    thumbnail: "/images/octawipe/thumb.webp",
-    heroImage: "/images/octawipe/hero.webp",
-    githubLink: "https://github.com/gaminbhoot/Octawipe",
-    prototypeLink: "https://octawipe.jayjoshi.online/",
+    id: "Intelligent Autonomous DNN for Vehicles",
+    title: "Intelligent Autonomous Vehicles: DNNs within Cyber-Physical systems",
+    category: "Computer Vision / DNN / MLP / NLP",
+    year: "May-July 2024",
+    thumbnail: "/images/ai-vision/hero.jpeg",
+    heroImage: "/images/ai-vision/hero.jpeg",
+    githubLink: "https://github.com/TezorInnovate/Yolov5-Object-detection",
+    prototypeLink: "",
     
     // RECRUITER SUMMARY - Technical implementation highlights only
     summary: {
-      tagline: "Cross-platform data sanitization system with NIST/DoD compliance, bootable deployment, and blockchain-anchored verification certificates.",
+      tagline: "Bridging deep neural networks and transformer intelligence to power multimodal perception and decision-making in autonomous cyber-physical vehicle systems.",
       
       keyTechnologies: [
-        "shred, blkdiscard, nvme-cli for multi-method sanitization",
-        "ATA Secure Erase & Cryptographic Erase",
-        "Ubuntu 24.04 LTS Live Boot environment",
-        "PXE network boot for bulk wiping",
-        "Digital signature & blockchain anchoring",
-        "PDF/JSON certificate generation"
+        "Yolov5 Object Detection",
+        "Domain: For Autonomous Vehicles",
+        "Real-Time + Picture + Video based inference",
       ],
       
       technicalHighlights: [
         {
-          title: "Storage-Aware Sanitization Engine",
-          description: "Implemented differentiated wiping strategies: multi-pass overwriting (shred) for HDDs, ATA Secure Erase and blkdiscard for SSDs, nvme-cli for NVMe devices. Includes HPA/DCO sector handling to prevent hidden data persistence."
+          title: "Training Model",
+          description: "By using a base Yolov5 model it is then trained on vehicle detection dataset for detecting cars, bikes, etc."
         },
         {
           title: "Bootable Deployment Architecture",
@@ -543,11 +543,9 @@ export const projectsData = [
       ],
       
       metrics: [
-        "NIST 800-88 & DoD 5220.22-M compliant",
-        "Supports HDD, SSD, NVMe storage types",
-        "Cross-platform: Windows, Linux, Android",
-        "Bulk PXE wiping for enterprise scale",
-        "Cryptographically verifiable certificates"
+        "Model layers: 157",
+        "Parameters: 7066762",
+        "Classes: 13"
       ],
       
       architecture: "Modular workflow: Web Portal/Local Boot → Device Detection → Storage-Type Routing → Sanitization Execution → Verification → Signed Certificate + Blockchain Anchoring",
@@ -555,21 +553,21 @@ export const projectsData = [
       // Select which images to showcase (image path + title)
       showcaseImages: [
         {
-          image: "/images/octawipe/goals.webp",
-          title: "Project Goals & Design Constraints"
+          image: "/images/ai-vision/1.jpg",
+          title: "Test image 1"
         },
         {
-          image: "/images/octawipe/architecture.webp",
-          title: "System Architecture"
+          image: "/images/ai-vision/2.jpg",
+          title: "Test image 2"
         },
         
         {
-          image: "/images/octawipe/sanitization.webp",
-          title: "Bootable Deployment"
+          image: "/images/ai-vision/3.jpg",
+          title: "Test image 3"
         },
         {
-          image: "/images/octawipe/novelty.webp",
-          title: "Network Wiping"
+          image: "/images/ai-vision/4.jpg",
+          title: "Test image 4"
         }
       ]
     },

@@ -270,7 +270,7 @@ export default function ProjectSummary() {
                       <h3 className="text-xs font-mono uppercase tracking-widest text-indigo-400">Key Metrics</h3>
                     </div>
                     <div className="grid grid-cols-1 gap-2">
-                      {summary.metrics.slice(0, 3).map((metric, index) => (
+                      {summary.metrics.slice(0, 8).map((metric, index) => (
                         <div key={index} className="flex items-center gap-2 text-xs">
                           <div className="w-1 h-1 rounded-full bg-indigo-400 flex-shrink-0" />
                           <span className="text-gray-300 font-mono">{metric}</span>
