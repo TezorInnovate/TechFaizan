@@ -525,20 +525,8 @@ export const projectsData = [
           description: "By using a base Yolov5 model it is then trained on vehicle detection dataset for detecting cars, bikes, etc."
         },
         {
-          title: "Bootable Deployment Architecture",
-          description: "Built OS-independent execution via Live USB, ISO, and PXE network boot. PXE enables one-click bulk sanitization across enterprise device fleets without individual OS installation."
-        },
-        {
-          title: "Automated Verification Layer",
-          description: "Designed verification subsystem that validates wipe completion, method integrity, and device-specific parameters post-sanitization. Prevents silent failures and ensures standards compliance."
-        },
-        {
-          title: "Cryptographic Certification System",
-          description: "Developed dual-format certificate generation (PDF + JSON) with digital signatures. Includes device metadata, wipe method, execution logs, timestamps, and cryptographic proofs."
-        },
-        {
-          title: "Blockchain-Anchored Trust Layer",
-          description: "Implemented immutable certificate validation using blockchain hash anchoring. Certificate hashes are stored on distributed ledger, enabling independent tamper detection without centralized servers."
+          title: "Inference",
+          description: "After model training, we create an inference script that integrates the camera with the model ans runs inference. Based on the detection the script creates bounding boxes and represents which class each object in the feed works on. For image and video inference, we create a separate script that takes input files and produces output files with the respective bounding boxes edited into the files."
         }
       ],
       
@@ -548,7 +536,7 @@ export const projectsData = [
         "Classes: 13"
       ],
       
-      architecture: "Modular workflow: Web Portal/Local Boot → Device Detection → Storage-Type Routing → Sanitization Execution → Verification → Signed Certificate + Blockchain Anchoring",
+      architecture: "Modular workflow: Real-Time camera feed → Model Inference → Create bounding boxes → Label with precision",
       
       // Select which images to showcase (image path + title)
       showcaseImages: [
