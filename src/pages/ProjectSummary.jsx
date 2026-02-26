@@ -341,7 +341,8 @@ export default function ProjectSummary() {
             </div>
           </div>
 
-          {/* CTA Footer */}
+          
+          {/* CTA Footer 
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.8, duration: 0.6 }} className="relative group">
             <div className="absolute -inset-4 bg-gradient-to-br from-indigo-500/10 to-purple-500/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-2xl" />
             <div className="relative p-6 rounded-2xl bg-gradient-to-r from-indigo-500/10 via-purple-500/10 to-indigo-500/10 backdrop-blur-sm border border-white/20 flex flex-col md:flex-row items-center justify-between gap-4">
@@ -349,6 +350,7 @@ export default function ProjectSummary() {
                 <p className="text-white font-semibold mb-1">Ready for the deep dive?</p>
                 <p className="text-gray-300 text-xs font-mono">Complete documentation with problem statement, design goals, and results</p>
               </div>
+              
               <Link to={`/project/${project.id}`} className="group/btn relative inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-indigo-500 to-indigo-600 hover:from-indigo-400 hover:to-indigo-500 text-white font-semibold transition-all duration-300 shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/60 hover:shadow-xl hover:scale-110 active:scale-95 whitespace-nowrap overflow-hidden">
                 <div className="absolute inset-0 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-700 rounded-xl">
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover/btn:translate-x-full transition-transform duration-1000" />
@@ -357,8 +359,10 @@ export default function ProjectSummary() {
                 <ChevronRight size={18} className="relative group-hover/btn:translate-x-1 transition-transform duration-300" />
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-indigo-400 via-purple-400 to-indigo-400 rounded-xl opacity-0 group-hover/btn:opacity-50 blur transition-opacity duration-500 -z-10" />
               </Link>
+              
             </div>
           </motion.div>
+          */}
 
         </motion.div>
       </div>

@@ -2,32 +2,31 @@
 
 export const projectsData = [
   {
-    id: "ai-motion-tracker",
-    title: "Real-Time AI Motion Detection & Tracking System",
-    category: "Computer Vision / Systems Engineering",
-    year: "2025",
-    thumbnail: "/images/ai-vision/thumb.webp",
-    heroImage: "/images/ai-vision/hero.webp",
-    githubLink: "https://github.com/gaminbhoot/surveillance-system",
-    prototypeLink: "https://surveillance-system.jayjoshi.online/",
+    id: "AI Firefighting Rover",
+    title: "AI-based Autonomous Firefighting Rover",
+    category: "Computer Vision / Hardware Design",
+    year: "2026",
+    thumbnail: "/images/ai-rover/thumb.webp",
+    heroImage: "/images/ai-rover/hero.webp",
+    githubLink: "https://github.com/TezorInnovate/Autonomous-Firefighting-Rover",
+    prototypeLink: "",
     
     // RECRUITER SUMMARY - Technical implementation highlights only
     summary: {
-      tagline: "Real-time surveillance system combining YOLOv8 detection, Deep SORT tracking, and motion heatmap analytics deployed via Flask web interface.",
+      tagline: "Real-time Yolov8 model for detecting fires, and performing subsequent actions to extinguish it via hardware designed for rover.",
       
       keyTechnologies: [
-        "YOLOv8 (nano) for object detection",
-        "Deep SORT for multi-object tracking",
-        "Kalman filtering & Hungarian matching",
-        "Flask web server with real-time streaming",
-        "OpenCV for video processing",
-        "NumPy for heatmap generation"
+        "YOLOv8 (nano) for fire classification",
+        "Ultrasonic & IR sensor fusion for enhanced detection",
+        "Esp32 based microcontrol for actuation and WiFi connectivity",
+        "Modular software design for seamless integration",
+        "Output logging for explainability"
       ],
       
       technicalHighlights: [
         {
           title: "Detection Pipeline",
-          description: "Implemented YOLOv8 nano variant with COCO pretrained weights for real-time person detection. Single forward pass architecture with confidence thresholding to balance precision and recall."
+          description: "Fine tuned and trained Yolov8 model using a fires dataset from Roboflow. Focus on small fores for prototype testing and validation. Model metrics ~87.5% Precision and ~78.1% Recall."
         },
         {
           title: "Identity Tracking",
@@ -43,40 +42,28 @@ export const projectsData = [
         },
         {
           title: "Deployment",
-          description: "Deployed as Flask-based web application with browser-compatible video streaming, REST API endpoints for motion statistics, and GPU-enabled cloud compatibility."
+          description: "Deployed as a hardware based rover with software design for full pipeline testing."
         }
       ],
       
       metrics: [
-        "12-18 FPS throughput on GPU environments",
-        "90-130ms end-to-end latency (network-bound)",
-        "25-35ms inference time per frame",
-        ">0.70 confidence for majority of detections"
+        "Precision: ~87.5%",
+        "Recall: ~78.1%",
+        "mAP50: 0.853",
+        "mAP50-95: 0.508"
       ],
       
-      architecture: "Modular pipeline: Video Input → YOLOv8 Detection → Deep SORT Tracking → Heatmap Generation → Flask Web Streaming",
+      architecture: "Modular pipeline: Video Inference → YOLOv8 Fire Detection → Decision Logic → Fire Localization → Approach Fire → Run Extinguish Logic → Re-Run Detection",
       
       // Select which images to showcase (image path + title)
       showcaseImages: [
         {
-          image: "/images/ai-vision/architecture.webp",
-          title: "System Architecture"
+          image: "/images/ai-rover/architecture.webp",
+          title: "Hardware Prototype"
         },
         {
-          image: "/images/ai-vision/detection.webp",
-          title: "Object Detection Strategy"
-        },
-        {
-          image: "/images/ai-vision/tracking.webp",
-          title: "Multi-Object Tracking"
-        },
-        {
-          image: "/images/ai-vision/heatmap.webp",
-          title: "Motion Heatmap Analytics"
-        },
-        {
-          image: "/images/ai-vision/results.webp",
-          title: "Performance Results"
+          image: "/images/ai-rover/detection.webp",
+          title: "Software Layout"
         }
       ]
     },
@@ -171,6 +158,340 @@ export const projectsData = [
         image: "/images/ai-vision/future.webp",
         content:
           "The upcoming versions of this approach could replace heuristic threat logic with learned temporal anomaly detection models. The addition of temporal decay and semantic zoning would further improve heatmap analytics. Finally, it is important to note that this project shows how existing computer vision pipelines can be used to improve surveillance intelligence from raw detection to something deployable and interpretable, thereby building a solid base for surveillance intelligence."
+      }
+    ]
+  },
+
+  {
+    id: "AI-based Autonommous Surveillance Drone",
+    title: "AEGIS-X: Adaptive Explainable Ground-Integrated Surveillance UAV",
+    category: "System Security / Data Sanitization",
+    year: "2025-26",
+    thumbnail: "/images/aegisx/thumb.webp",
+    heroImage: "/images/aegisx/hero.webp",
+    githubLink: "",
+    prototypeLink: "",
+    
+    // RECRUITER SUMMARY - Technical implementation highlights only
+    summary: {
+      tagline: "An autonommus surveillance system for drones. Integrated technologies for a new defense system.",
+      
+      keyTechnologies: [
+        "AI Computer vision for perception",
+        "Flight Controller BotWing F722 for flight control",
+        "Raspberry Pi 4B for AI compute and command control",
+        "Tof, GPS, Acoustic, and IMU Sensor data parsing",
+        "Risk Learninng algorithm for evolving flight data",
+        "Reasoning and Threat classification based on perception"
+      ],
+      
+      technicalHighlights: [
+        {
+          title: "AI Perception Module",
+          description: "A fusion of Vision data and multi-sensor feed parsing for extensive detection. The data runs through trained Yolov8/RT-DETR models for AI based decision making."
+        },
+        {
+          title: "Reasoning & Threat Classification",
+          description: "With the use of light weight MLP model and rule based control the software can estimate risk of certain activities and flag high risk scene for monitoring."
+        },
+        {
+          title: "Planning & Explainability",
+          description: "Common path planning algorithms such as A* and RRT* combined for more efficient path planning. Constraints for path planning are decided based on behaviour analysis and rule based decisions. Explainabilty implemented via rule tracing, path scoring, and feature importance."
+        },
+        {
+          title: "Control Layer Design",
+          description: "MAVLink and PX4 software integration for PID control and actuators. There is a connection of Raspberry Pi and the F722 flight controller for bi-directional telemetry."
+        },
+        {
+          title: "Learning & Memory",
+          description: "Implements persistent risk memory that updates with each flight to allow for self-supervised adaptation from flight scenarios. Logging done in SQLite and JSON files."
+        }
+      ],
+      
+      metrics: [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      
+      architecture: "Modular workflow: Flight Arming → Toggle to Auto-mode → Sensors + Vision Activated → AI Pereption → Risk Modelling → Explainable Planning → Surveillance loop execution → Learning from flights",
+      
+      // Select which images to showcase (image path + title)
+      showcaseImages: [
+        {
+          image: "/images/aigesx/goals.webp",
+          title: "Hardware Drone Design"
+        },
+        {
+          image: "/images/aigesx/architecture.webp",
+          title: "System Software Layout"
+        },
+        
+        {
+          image: "/images/aegisx/sanitization.webp",
+          title: "Project Plan Poster"
+        },
+        {
+          image: "/images/agisx/novelty.webp",
+          title: "Explainability Output"
+        }
+      ]
+    },
+    
+    // Full detailed sections for ProjectDetail.jsx
+    sections: [
+      {
+        id: "overview",
+        title: "Overview",
+        image: "/images/octawipe/overview.webp",
+        content:
+          "OctaWipe provides a secure and cross-platform solution for data erasure that can be used to promote safe IT asset recycling and reuse. The OctaWipe system was developed in accordance with various international standards on data destruction and provides a one-click user interface for secure data erasure from storage devices while ensuring forensic unrecoverability. The OctaWipe solution targets various users, including individuals, enterprises, and e-waste processors who require secure and verifiable wiping methods for their data."
+      },
+      {
+        id: "context-problem",
+        title: "Context, Motivation & Problem Statement",
+        image: "/images/octawipe/problem.webp",
+        content:
+          "The problem of e-waste is growing at a very fast rate in India, with millions of devices being stored or discarded early because of the fear of exposing the data. Many people, organizations, and recycling centers avoid reselling or reusing these devices because they cannot ensure the complete removal of the sensitive information. The current methods of removing data are highly fragmented, platform-dependent, and require technical expertise, which is a major hindrance.\n\n" +
+          "Currently, the greater part of the prevailing data destruction solutions is suffering from the aforementioned systemic issues. A substantial number of the solutions lack cross-platform compatibility, making them impractical and ineffective in heterogeneous environments. Others lack independent and verifiable evidence of sanitization, making the user and organization in question forced to employ an opaque wiping process without guarantees.\n\n" +
+          "In large-scale enterprise settings, there are additional issues that come into play to efficiently sanitize a large number of devices. Bulk wiping a large number of devices can be a slow and laborious process. The problem is further compounded by modern storage media, such as SSDs and NVMe drives, where traditional overwriting methods do not suffice and forensic recoverability is a valid concern. OctaWipe was developed to address the usability, scale, verification, and trust issues within a single standards-based solution."
+      },
+      {
+        id: "goals",
+        title: "Design Goals",
+        image: "/images/octawipe/goals.webp",
+        content:
+          "The system was designed around four primary goals: " +
+          "(1) Full compliance with NIST 800-88 and DoD 5220.22-M data sanitization standards, " +
+          "(2) Cross-platform usability across Windows, Linux, and Android environments, " +
+          "(3) Support for bulk and network-based wiping at enterprise scale, " +
+          "(4) Generation of tamper-proof, verifiable wiping certificates. " +
+          "All architectural and tooling decisions were guided by these constraints."
+      },
+      {
+        id: "architecture",
+        title: "System Architecture",
+        image: "/images/octawipe/architecture.webp",
+        content:
+          "OctaWipe has a modular architecture that uses a boot-independent wiping environment. Its operation starts by using a web-based or local portal, followed by a bootable execution using USB, ISO, and PXE Network Boot. Once executed, the device detects the storage devices, applies the wiping method, and then creates a digitally signed certificate that includes the logs and the metadata."
+      },
+      {
+        id: "sanitization",
+        title: "Disk Detection & Sanitization Engine",
+        image: "/images/octawipe/sanitization.webp",
+        content:
+          "Essentially, the core idea behind OctaWipe is the implementation of various sanitization methods, depending on the storage devices being used. For instance, when dealing with HDD devices, the tool supports both multi-pass and single-pass overwriting using the shred method. On the other hand, the tool uses ATA Secure Erase, blkdiscard, nvme-cli, and even cryptographic erase methods when dealing with SSD and NVMe devices. The tool also supports the wiping of HPA and DCO sectors."
+      },
+      {
+        id: "boot",
+        title: "Bootable & Network Deployment",
+        image: "/images/octawipe/boot.webp",
+        content:
+          "To overcome the OS dependency, OctaWipe supports execution on Live USB, ISO, and PXE Network Boot. The advantage of using PXE Boot is that it allows one-click wiping of multiple machines, which is especially useful for enterprises and e-waste recycling centers. The execution environment is provided by Ubuntu 24.04 LTS."
+      },
+      {
+        id: "verification-trust",
+        title: "Verification, Certification & Tamper-Proof Trust Layer",
+        image: "/images/octawipe/certification.webp",
+        content:
+          "Verification is treated as a first-class system component in OctaWipe rather than a post-process add-on. After sanitization, the system performs automated verification checks to ensure that the selected wiping standard has been correctly applied. These checks validate completion status, method integrity, and device-specific parameters, ensuring that no partial or silent failures go unnoticed.\n\n" +
+          "Once verification is complete, OctaWipe generates digitally signed wiping certificates in both human-readable (PDF) and machine-readable (JSON) formats. Each certificate contains detailed metadata including device identifiers, storage type, applied wipe method, execution logs, timestamps, and cryptographic signatures. This enables both operational confirmation and long-term auditability.\n\n" +
+          "To eliminate the risk of certificate tampering or forgery, OctaWipe introduces an additional immutable trust layer using blockchain anchoring. Rather than storing full certificates on-chain, cryptographic hashes of the signed wipe reports are anchored to a distributed ledger. This design preserves privacy while ensuring that any future alteration of a certificate can be independently detected.\n\n" +
+          "By decoupling verification from centralized servers, the system avoids single points of failure and long-term dependency risks. The result is a robust trust architecture where wiping claims can be validated years later, even outside the original operational environment. This layered approach balances transparency, privacy, and durability without introducing unnecessary blockchain overhead."
+      },
+      {
+        id: "standards",
+        title: "Standards Compliance",
+        image: "/images/octawipe/standards.webp",
+        content:
+          "OctaWipe adheres strictly to globally recognized data sanitization standards, including NIST 800-88, DoD 5220.22-M (E), and DoD 5220.22-M (ECE). These standards ensure that data is rendered unrecoverable using both software based and forensic techniques, making the solution suitable for regulated industries."
+      },
+      {
+        id: "novelty",
+        title: "Novelty & Innovation",
+        image: "/images/octawipe/novelty.webp",
+        content:
+          "OctaWipe's novelty lies not in inventing new wiping algorithms, but in integrating existing, proven techniques into a cohesive, verifiable system. The combination of PXE-based bulk wiping, storage-aware sanitization methods, and cryptographically verifiable certificates is rarely seen in a single platform. Most existing tools focus either on wiping or reporting; OctaWipe treats verification as a first-class system component. This integration-first design enables scalability, auditability, and trust without sacrificing usability, making the solution suitable for both enterprise and field deployment scenarios."
+      },
+      {
+        id: "impact-future",
+        title: "Impact, Benefits & Future Scope",
+        image: "/images/octawipe/future.webp",
+        content:
+          "OctaWipe addresses a critical trust deficit in the IT asset disposal and reuse lifecycle. By providing verifiable, tamper-resistant proof of data destruction, the system enables devices to be safely resold, refurbished, or recycled without fear of residual data leakage. This directly reduces unnecessary hardware disposal and supports circular economy practices, particularly in regions facing severe e-waste challenges.\n\n" +
+          "For enterprises, OctaWipe significantly lowers compliance risk and operational overhead during large-scale decommissioning workflows. Automated verification, bulk wiping via PXE, and standardized certification streamline audit readiness and reduce reliance on manual reporting. For individuals and e-waste handlers, the system restores confidence that sensitive personal or organizational data has been permanently erased using recognized standards.\n\n" +
+          "Looking ahead, future development will focus on deeper automation, intelligence, and ecosystem integration. Planned enhancements include policy-driven wipe recommendations based on device type, storage technology, and regulatory context, as well as tighter integration with enterprise asset management and ITSM systems. Expanded support for mobile, embedded, and IoT-class devices will further broaden applicability.\n\n" +
+          "Long-term, OctaWipe has the potential to evolve into a standardized trust layer for device lifecycle management—bridging data security, compliance, and sustainable hardware reuse. By extending verification beyond the moment of wiping and into the lifetime of the asset, the system can help redefine how organizations think about digital trust in physical infrastructure."
+      }
+    ]
+  },
+
+  {
+    id: "Neuro-Shield: Self Healing Cybersecurity Framework",
+    title: "Neuro-Shield: Self Healing Cybersecurity Framework",
+    category: "Cybersecurity / Linux OS / Random Forest",
+    year: "May-June 2025",
+    thumbnail: "/images/neuroshield/thumb.webp",
+    heroImage: "/images/neuroshield/hero.webp",
+    githubLink: "https://github.com/TezorInnovate/NeuroShield",
+    prototypeLink: "",
+    
+    // RECRUITER SUMMARY - Technical implementation highlights only
+    summary: {
+      tagline: "An AI-Based real-time Intrusion Detection and self-healing security Framework ",
+      
+      keyTechnologies: [
+        "Wire Shark Packet tracing",
+        "Random Forest Model",
+        "UNSW-NB15 IDS Dataset",
+        "Telgram Alert Bot",
+        "Modular Software Design",
+        "OS commands for attack defense"
+      ],
+      
+      technicalHighlights: [
+        {
+          title: "System Modules",
+          description: "The system contains multiple modules that interact with each other for combined functionality. The modules are: feature extractor, detector interface, healing engine, telegram bot. Each of the mmodules are explained as follows..."
+        },
+        {
+          title: "Feature Extractor Module",
+          description: "This module functions as the scanning phase which continuously monitors the system for network packets and then sends them as input for the detector interface. It only reads packets, no AI or detection is applied here."
+        },
+        {
+          title: "Detector Interface",
+          description: "This is the main script that combines all modules. On receiving packet information from the feature extractor, this script sends the packets to the trained Random forest model for inference. The model them sends the classification of each packet back to this module which then runs rule-based execution. If it is classified as an attack then the interface informs the healing engine of the attack and also informs the telegram bot. If it is a normal packet, then it is discarded."
+        },
+        {
+          title: "Healing Engine",
+          description: "This module is the attack defense layer which utilizes OS based commands for protecting the system from the attacks. For each of the attack types, there are different OS commands to be executed to take care of them accordingly."
+        },
+        {
+          title: "Telegram Bot",
+          description: "This module has a telegram bot created that sends notifications to the user if any attack is detected. It sends timestamps along with the label of the attack type."
+        },
+        {
+          title: "Attack Simulator",
+          description: "With the help of simulated data packets we can send safe attacks to the system to test out the software. By sending selected attack types, the system flags them as attacks and performs the necessary measures."
+        }
+      ],
+      
+      metrics: [
+        "Model Precision: 94.1%",
+        "Model Recall: 93.8%",
+        "Model F1 score: 0.939",
+        "IP Blocking: ~150 ms",
+        "Connection kill: ~200 ms",
+        "Port Closure: ~100 ms",
+        "Logging: ~30 ms"
+      ],
+      
+      architecture: "Modular workflow: System Packets → Feature Extractor → Detector Interface → Model → Healing Engine → Telegram Bot",
+      
+      // Select which images to showcase (image path + title)
+      showcaseImages: [
+        {
+          image: "/images/octawipe/goals.webp",
+          title: "Model Matrix"
+        },
+        {
+          image: "/images/octawipe/architecture.webp",
+          title: "System Architecture"
+        },
+        
+        {
+          image: "/images/octawipe/sanitization.webp",
+          title: "Telegram Bot"
+        }
+      ]
+    },
+    
+    // Full detailed sections for ProjectDetail.jsx
+    sections: [
+      {
+        id: "overview",
+        title: "Overview",
+        image: "/images/octawipe/overview.webp",
+        content:
+          "OctaWipe provides a secure and cross-platform solution for data erasure that can be used to promote safe IT asset recycling and reuse. The OctaWipe system was developed in accordance with various international standards on data destruction and provides a one-click user interface for secure data erasure from storage devices while ensuring forensic unrecoverability. The OctaWipe solution targets various users, including individuals, enterprises, and e-waste processors who require secure and verifiable wiping methods for their data."
+      },
+      {
+        id: "context-problem",
+        title: "Context, Motivation & Problem Statement",
+        image: "/images/octawipe/problem.webp",
+        content:
+          "The problem of e-waste is growing at a very fast rate in India, with millions of devices being stored or discarded early because of the fear of exposing the data. Many people, organizations, and recycling centers avoid reselling or reusing these devices because they cannot ensure the complete removal of the sensitive information. The current methods of removing data are highly fragmented, platform-dependent, and require technical expertise, which is a major hindrance.\n\n" +
+          "Currently, the greater part of the prevailing data destruction solutions is suffering from the aforementioned systemic issues. A substantial number of the solutions lack cross-platform compatibility, making them impractical and ineffective in heterogeneous environments. Others lack independent and verifiable evidence of sanitization, making the user and organization in question forced to employ an opaque wiping process without guarantees.\n\n" +
+          "In large-scale enterprise settings, there are additional issues that come into play to efficiently sanitize a large number of devices. Bulk wiping a large number of devices can be a slow and laborious process. The problem is further compounded by modern storage media, such as SSDs and NVMe drives, where traditional overwriting methods do not suffice and forensic recoverability is a valid concern. OctaWipe was developed to address the usability, scale, verification, and trust issues within a single standards-based solution."
+      },
+      {
+        id: "goals",
+        title: "Design Goals",
+        image: "/images/octawipe/goals.webp",
+        content:
+          "The system was designed around four primary goals: " +
+          "(1) Full compliance with NIST 800-88 and DoD 5220.22-M data sanitization standards, " +
+          "(2) Cross-platform usability across Windows, Linux, and Android environments, " +
+          "(3) Support for bulk and network-based wiping at enterprise scale, " +
+          "(4) Generation of tamper-proof, verifiable wiping certificates. " +
+          "All architectural and tooling decisions were guided by these constraints."
+      },
+      {
+        id: "architecture",
+        title: "System Architecture",
+        image: "/images/octawipe/architecture.webp",
+        content:
+          "OctaWipe has a modular architecture that uses a boot-independent wiping environment. Its operation starts by using a web-based or local portal, followed by a bootable execution using USB, ISO, and PXE Network Boot. Once executed, the device detects the storage devices, applies the wiping method, and then creates a digitally signed certificate that includes the logs and the metadata."
+      },
+      {
+        id: "sanitization",
+        title: "Disk Detection & Sanitization Engine",
+        image: "/images/octawipe/sanitization.webp",
+        content:
+          "Essentially, the core idea behind OctaWipe is the implementation of various sanitization methods, depending on the storage devices being used. For instance, when dealing with HDD devices, the tool supports both multi-pass and single-pass overwriting using the shred method. On the other hand, the tool uses ATA Secure Erase, blkdiscard, nvme-cli, and even cryptographic erase methods when dealing with SSD and NVMe devices. The tool also supports the wiping of HPA and DCO sectors."
+      },
+      {
+        id: "boot",
+        title: "Bootable & Network Deployment",
+        image: "/images/octawipe/boot.webp",
+        content:
+          "To overcome the OS dependency, OctaWipe supports execution on Live USB, ISO, and PXE Network Boot. The advantage of using PXE Boot is that it allows one-click wiping of multiple machines, which is especially useful for enterprises and e-waste recycling centers. The execution environment is provided by Ubuntu 24.04 LTS."
+      },
+      {
+        id: "verification-trust",
+        title: "Verification, Certification & Tamper-Proof Trust Layer",
+        image: "/images/octawipe/certification.webp",
+        content:
+          "Verification is treated as a first-class system component in OctaWipe rather than a post-process add-on. After sanitization, the system performs automated verification checks to ensure that the selected wiping standard has been correctly applied. These checks validate completion status, method integrity, and device-specific parameters, ensuring that no partial or silent failures go unnoticed.\n\n" +
+          "Once verification is complete, OctaWipe generates digitally signed wiping certificates in both human-readable (PDF) and machine-readable (JSON) formats. Each certificate contains detailed metadata including device identifiers, storage type, applied wipe method, execution logs, timestamps, and cryptographic signatures. This enables both operational confirmation and long-term auditability.\n\n" +
+          "To eliminate the risk of certificate tampering or forgery, OctaWipe introduces an additional immutable trust layer using blockchain anchoring. Rather than storing full certificates on-chain, cryptographic hashes of the signed wipe reports are anchored to a distributed ledger. This design preserves privacy while ensuring that any future alteration of a certificate can be independently detected.\n\n" +
+          "By decoupling verification from centralized servers, the system avoids single points of failure and long-term dependency risks. The result is a robust trust architecture where wiping claims can be validated years later, even outside the original operational environment. This layered approach balances transparency, privacy, and durability without introducing unnecessary blockchain overhead."
+      },
+      {
+        id: "standards",
+        title: "Standards Compliance",
+        image: "/images/octawipe/standards.webp",
+        content:
+          "OctaWipe adheres strictly to globally recognized data sanitization standards, including NIST 800-88, DoD 5220.22-M (E), and DoD 5220.22-M (ECE). These standards ensure that data is rendered unrecoverable using both software based and forensic techniques, making the solution suitable for regulated industries."
+      },
+      {
+        id: "novelty",
+        title: "Novelty & Innovation",
+        image: "/images/octawipe/novelty.webp",
+        content:
+          "OctaWipe's novelty lies not in inventing new wiping algorithms, but in integrating existing, proven techniques into a cohesive, verifiable system. The combination of PXE-based bulk wiping, storage-aware sanitization methods, and cryptographically verifiable certificates is rarely seen in a single platform. Most existing tools focus either on wiping or reporting; OctaWipe treats verification as a first-class system component. This integration-first design enables scalability, auditability, and trust without sacrificing usability, making the solution suitable for both enterprise and field deployment scenarios."
+      },
+      {
+        id: "impact-future",
+        title: "Impact, Benefits & Future Scope",
+        image: "/images/octawipe/future.webp",
+        content:
+          "OctaWipe addresses a critical trust deficit in the IT asset disposal and reuse lifecycle. By providing verifiable, tamper-resistant proof of data destruction, the system enables devices to be safely resold, refurbished, or recycled without fear of residual data leakage. This directly reduces unnecessary hardware disposal and supports circular economy practices, particularly in regions facing severe e-waste challenges.\n\n" +
+          "For enterprises, OctaWipe significantly lowers compliance risk and operational overhead during large-scale decommissioning workflows. Automated verification, bulk wiping via PXE, and standardized certification streamline audit readiness and reduce reliance on manual reporting. For individuals and e-waste handlers, the system restores confidence that sensitive personal or organizational data has been permanently erased using recognized standards.\n\n" +
+          "Looking ahead, future development will focus on deeper automation, intelligence, and ecosystem integration. Planned enhancements include policy-driven wipe recommendations based on device type, storage technology, and regulatory context, as well as tighter integration with enterprise asset management and ITSM systems. Expanded support for mobile, embedded, and IoT-class devices will further broaden applicability.\n\n" +
+          "Long-term, OctaWipe has the potential to evolve into a standardized trust layer for device lifecycle management—bridging data security, compliance, and sustainable hardware reuse. By extending verification beyond the moment of wiping and into the lifetime of the asset, the system can help redefine how organizations think about digital trust in physical infrastructure."
       }
     ]
   },
@@ -340,6 +661,5 @@ export const projectsData = [
       }
     ]
   }
-
   // Add more projects here
 ];
