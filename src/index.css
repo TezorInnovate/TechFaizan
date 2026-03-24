@@ -2,10 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ══════════════════════════════════════════════════
+   STARRY DARK-BLUE THEME — CSS VARIABLES
+   ══════════════════════════════════════════════════ */
+:root {
+  --bg-deep:      #04081a;   /* page base */
+  --bg-navy:      #060c22;   /* slightly lighter layer */
+  --bg-card:      #0a1535;   /* card backgrounds */
+  --blue-accent:  #4f9ef8;   /* primary accent (electric blue) */
+  --blue-soft:    #7ec8e3;   /* secondary accent (sky) */
+  --violet-soft:  #a78bfa;   /* tertiary accent (violet) */
+  --text-bright:  #e8eaf6;
+  --text-muted:   #8899bb;
+  --border-dim:   rgba(79,158,248,0.14);
+  --border-glow:  rgba(79,158,248,0.35);
+  --glow-blue:    rgba(79,158,248,0.18);
+  --glow-violet:  rgba(167,139,250,0.12);
+}
+
+/* ══════════════════════════════════════════════════
+   STAR CANVAS — fixed behind everything
+   ══════════════════════════════════════════════════ */
+#star-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ══════════════════════════════════════════════════
+   BASE
+   ══════════════════════════════════════════════════ */
 .section-content {
   white-space: pre-line;
 }
-
 
 * {
   margin: 0;
@@ -16,14 +46,23 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #000000;
+  /* starry dark blue instead of pure black */
+  background-color: var(--bg-deep);
   color: #e2e8f0;
+  /* subtle nebula overlay */
+  background-image:
+    radial-gradient(ellipse 80% 50% at 15% 10%, rgba(79,158,248,0.05) 0%, transparent 55%),
+    radial-gradient(ellipse 60% 45% at 85% 80%, rgba(167,139,250,0.04) 0%, transparent 55%);
+  background-attachment: fixed;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+/* ══════════════════════════════════════════════════
+   SCROLLBAR
+   ══════════════════════════════════════════════════ */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -34,64 +73,66 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #475569;
+  background-color: rgba(79,158,248,0.25);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #64748b;
+  background-color: rgba(79,158,248,0.45);
+}
 
-}
+/* ══════════════════════════════════════════════════
+   CURSOR HANDLING
+   ══════════════════════════════════════════════════ */
 @media (hover: none) and (pointer: coarse) {
-  * {
-    cursor: auto;
-     }
+  * { cursor: auto; }
 }
-/* Hide custom cursor by default on touch-only devices */
 @media (pointer: coarse) {
-  .custom-cursor-class {
+  .custom-cursor-class { display: none !important; }
+}
+@media (pointer: coarse) {
+  html, body { cursor: auto !important; }
+}
+@media (pointer: coarse) {
+  .custom-cursor-wrapper,
+  [data-testid="custom-cursor"] {
     display: none !important;
   }
+  html, body { cursor: auto !important; }
 }
-
-/* Ensure native cursor is visible if the custom one is hidden on mobile */
-@media (pointer: coarse) {
-  html, body {
-    cursor: auto !important;
-  }
-}
-/* 1. Default: Hide custom cursor on all touch devices */
-@media (pointer: coarse) {
-  .custom-cursor-wrapper, 
-  [data-testid="custom-cursor"] { 
-    display: none !important; 
-  }
-  
-  /* Ensure the standard mouse pointer is restored so the site is usable */
-  html, body {
-    cursor: auto !important;
-  }
-}
-
-/* 2. Laptop/Desktop Fix: Ensure visibility for Trackpads & Mice */
 @media (pointer: fine) {
-  .custom-cursor-wrapper {
-    display: block;
-  }
-  
-  /* Hide the default system cursor ONLY when the custom one is active */
-  html, body {
-    cursor: none;
-  }
+  .custom-cursor-wrapper { display: block; }
+  html, body { cursor: none; }
 }
-/* Hide scrollbar globally (but keep scroll functionality) */
+
+/* ══════════════════════════════════════════════════
+   HIDE SCROLLBAR (keep functionality)
+   ══════════════════════════════════════════════════ */
 html, body {
   overflow-x: hidden;
-  scrollbar-width: none;          /* Firefox */
-  -ms-overflow-style: none;       /* IE / Edge */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
-
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
-  display: none;                  /* Chrome, Safari */
+  display: none;
 }
+
+/* ══════════════════════════════════════════════════
+   GLOBAL THEME OVERRIDES
+   (so all pages inherit the blue palette without
+    touching each file's own inline Tailwind classes)
+   ══════════════════════════════════════════════════ */
+
+/* Nav / layout wrapper sits above star canvas */
+#root {
+  position: relative;
+  z-index: 1;
+}
+
+/* Shimmer utility used in Projects */
+@keyframes shimmer {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+.animate-shimmer { animation: shimmer 3s infinite; }

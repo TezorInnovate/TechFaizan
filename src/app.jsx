@@ -2,6 +2,7 @@ import React, { lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
 import { Home as HomeIcon, Folder, Mail, Settings } from 'lucide-react';
 import { SpeedInsights } from '@vercel/speed-insights/react';
+import StarCanvas from "./components/StarCanvas";
 
 // Always visible, keep static
 import GlassOverlay from "./components/background/GlassOverlay";
@@ -42,6 +43,8 @@ function AppContent() {
         blur={17}
         opacity={0.75}
       />
+
+      <StarCanvas />
 
       <div className="relative z-20 min-h-screen pt-20 pb-48">
         <Suspense fallback={null}>
