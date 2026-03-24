@@ -147,17 +147,15 @@ export default function Skills() {
   }, []);
 
   const skills = [
-    "AI & ML",
-    "Python - NLP, Computer Vision, etc",
-    "Robotics",
-    "Autonomous & Embedded Systems",
-    "CAD Designing & Technical Drawing",
-    "Hardware Design",
+    "AI Stack: AIML, DL, CNN, GenAI, LLM",
+    "Programming: C/C++, Java, Python",
+    "Microcontrollers: ESP32, Arduino, Raspberry Pi",
+    "Autonomous Systems and Robotics Integration",
+    "ROS2 Sensor Fusion and Gazebo Simulation",
+    "AutoCAD, Autodesk Inventor, SolidWorks",
     "Git & GitHub",
-    "Deep Learning Frameworks",
-    "Data Visualization",
-    "Cisco Networking",
-    "Project Development",
+    "Project Planning and Technical Documentation",
+    "Assembly, Testing, Debugging",
   ];
 
   const certifications = [
