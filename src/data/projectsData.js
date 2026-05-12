@@ -167,8 +167,8 @@ export const projectsData = [
     title: "AEGIS-X: Adaptive Explainable Ground-Integrated Surveillance UAV",
     category: "System Security / Data Sanitization",
     year: "2025-26",
-    thumbnail: "/images/aegisx/logo3.jpg",
-    heroImage: "/images/aegisx/logo3.jpg",
+    thumbnail: "/images/aegisx/logo3.jpeg",
+    heroImage: "/images/aegisx/logo3.jpeg",
     githubLink: "",
     prototypeLink: "",
     
