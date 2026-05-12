@@ -167,8 +167,8 @@ export const projectsData = [
     title: "AEGIS-X: Adaptive Explainable Ground-Integrated Surveillance UAV",
     category: "System Security / Data Sanitization",
     year: "2025-26",
-    thumbnail: "/images/aegisx/logo2.jpg",
-    heroImage: "/images/aegisx/logo2.jpg",
+    thumbnail: "/images/aegisx/logo3.jpg",
+    heroImage: "/images/aegisx/logo3.jpg",
     githubLink: "",
     prototypeLink: "",
     
@@ -225,8 +225,8 @@ export const projectsData = [
           title: "Hardware Drone Design"
         },
         {
-          image: "/images/aegisx/architecture.webp",
-          title: "System Software Layout"
+          image: "/images/aegisx/dronerover.jpeg",
+          title: "System Hardware"
         },
         
         {
@@ -234,8 +234,8 @@ export const projectsData = [
           title: "Project Plan Poster"
         },
         {
-          image: "/images/agisx/novelty.webp",
-          title: "Explainability Output"
+          image: "/images/agisx/circuit.jpeg",
+          title: "Internal Design"
         }
       ]
     },
