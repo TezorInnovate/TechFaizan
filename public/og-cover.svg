@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f8f9f5"/><stop offset="1" stop-color="#dfe8ff"/></linearGradient><pattern id="p" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#2457e6" stroke-opacity=".1"/></pattern></defs>
+  <rect width="1200" height="630" fill="url(#g)"/><rect width="1200" height="630" fill="url(#p)"/>
+  <text x="84" y="120" fill="#2457e6" font-family="monospace" font-size="24" letter-spacing="6">TECHFAIZAN.COM</text>
+  <text x="80" y="288" fill="#101828" font-family="Arial, sans-serif" font-size="78" font-weight="800">Faizan Ahmed Syed</text>
+  <text x="84" y="370" fill="#344054" font-family="Arial, sans-serif" font-size="38">AI · Robotics · Autonomous Systems</text>
+  <path d="M84 470H910" stroke="#2457e6" stroke-width="4"/><circle cx="910" cy="470" r="12" fill="#2457e6"/><path d="M910 470l138-95" stroke="#2457e6" stroke-width="4"/><circle cx="1048" cy="375" r="12" fill="#2457e6"/>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 960" role="img" aria-labelledby="title description">
+  <title id="title">Faizan Ahmed Syed profile placeholder</title>
+  <description id="description">Abstract cobalt engineering portrait placeholder with the initials FAS.</description>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e9efff"/>
+      <stop offset="1" stop-color="#c9d8ff"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#2457e6" stroke-opacity=".1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="960" rx="40" fill="url(#bg)"/>
+  <rect width="800" height="960" rx="40" fill="url(#grid)"/>
+  <circle cx="624" cy="180" r="126" fill="none" stroke="#2457e6" stroke-opacity=".2" stroke-width="2"/>
+  <circle cx="624" cy="180" r="82" fill="none" stroke="#2457e6" stroke-opacity=".35" stroke-width="2"/>
+  <path d="M90 810C218 672 252 530 360 434c99-88 205-68 350-215" fill="none" stroke="#2457e6" stroke-opacity=".22" stroke-width="3"/>
+  <circle cx="90" cy="810" r="9" fill="#2457e6"/><circle cx="360" cy="434" r="9" fill="#2457e6"/><circle cx="710" cy="219" r="9" fill="#2457e6"/>
+  <text x="70" y="730" fill="#122044" font-family="Arial, sans-serif" font-size="190" font-weight="800" letter-spacing="-12">FAS</text>
+  <text x="78" y="792" fill="#2457e6" font-family="monospace" font-size="28" letter-spacing="5">AI · ROBOTICS · SYSTEMS</text>
+</svg>
